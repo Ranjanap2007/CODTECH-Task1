@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+#include <cctype>  
+using namespace std;
+
+int main() {
+    int score = 0; 
+    char answer;    
+    cout << "What is the capital of France?" << endl;
+    cout << "A. Berlin" << endl;
+    cout << "B. Madrid" << endl;
+    cout << "C. Paris" << endl;
+    cout << "D. Rome" << endl;
+    cout << "Enter your answer (A/B/C/D): ";
+    cin >> answer;
+    if (toupper(answer) == 'C') {
+        cout << "Correct!" << endl;
+        score++;  // Increment score
+    } else {
+        cout << "Incorrect! The correct answer is C. Paris." << endl;
+    }
+    cout << "\nWhich programming language is used for this quiz?" << endl;
+    cout << "A. Java" << endl;
+    cout << "B. C++" << endl;
+    cout << "C. Python" << endl;
+    cout << "D. JavaScript" << endl;
+    cout << "Enter your answer (A/B/C/D): ";
+    cin >> answer;
+    if (toupper(answer) == 'B') {
+        cout << "Correct!" << endl;
+        score++;  
+    } else {
+        cout << "Incorrect! The correct answer is B. C++." << endl;
+    }
+    cout << "\nWhat is 5 + 7?" << endl;
+    cout << "A. 10" << endl;
+    cout << "B. 11" << endl;
+    cout << "C. 12" << endl;
+    cout << "D. 13" << endl;
+    cout << "Enter your answer (A/B/C/D): ";
+    cin >> answer;
+    if (toupper(answer) == 'C') {
+        cout << "Correct!" << endl;
+        score++;  
+    } else {
+        cout << "Incorrect! The correct answer is C. 12." << endl;
+    }
+    cout << "\nYour final score is: " << score << "/3" << endl;
+
+    return 0;
+}
